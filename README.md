@@ -17,3 +17,7 @@
 
 ## 미래의 나는
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/> <img src="https://img.shields.io/badge/jQuery-0769AD?style=flat-square&logo=jQuery&logoColor=white"/> <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/> <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat-square&logo=Spring Boot&logoColor=white"/>
+<br>
+<br>
+## 스탯 
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Suujung&show_icons=true&theme=default)
