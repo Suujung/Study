@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var sourcemaps = require('gulp-sourcemaps');
 var rename = require("gulp-rename");
 
@@ -20,5 +20,5 @@ gulp.task('sass', function() {
 
 
 gulp.task('watch', function() {
-  gulp.watch('**/**/scss/**/*.scss',  gulp.series('sass'));
+  gulp.watch('**/**/scss/**/*.scss', ['sass']);
 });

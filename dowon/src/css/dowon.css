@@ -1,0 +1,261 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+	-webkit-overflow-scrolling: touch;
+	background-color: #fff;
+	font-family: "NanumSquare", "나눔스퀘어", "나눔고딕", NanumGothic, "맑은고딕", MalgunGothic, "돋움", Dotum, Helvetica, sans-serif;
+}
+
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+select,
+table,
+td,
+textarea,
+th,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+th {
+	font-weight: normal;
+}
+
+fieldset {
+	border: 0;
+}
+
+img,
+video {
+	border: 0;
+	vertical-align: top;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+li {
+	vertical-align: top;
+	list-style: none;
+}
+
+textarea {
+	-webkit-appearance: none;
+	appearance: none;
+	resize: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+address,
+em {
+	font-style: normal;
+}
+
+input,
+select {
+	vertical-align: middle;
+}
+
+input[type=text]::-ms-clear {
+	display: none;
+}
+
+button {
+	padding: 0;
+	border: none;
+	border: 0;
+	outline: none;
+	outline: 0;
+	background: none;
+	background-color: transparent;
+	-webkit-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	font-family: "NanumSquareNeo", "NanumSquare", "나눔스퀘어", "나눔고딕", NanumGothic, "맑은고딕", MalgunGothic, "돋움", Dotum, Helvetica, sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:active, a:focus, a:hover {
+	text-decoration: none;
+	outline: none;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block;
+}
+
+table {
+	table-layout: fixed;
+	padding: 0;
+	border-spacing: 0;
+	border: 0;
+	border-collapse: collapse;
+}
+
+table caption {
+	visibility: hidden;
+}
+
+.blind {
+	overflow: hidden;
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
+.wrap {
+	position: relative;
+	min-width: 1000px;
+}
+.wrap .inner {
+	width: 1000px;
+	margin: 0 auto;
+}
+.wrap .nav {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 10;
+}
+.wrap .nav .inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 60px;
+	padding: 0 40px;
+	box-sizing: border-box;
+	color: #fff;
+}
+.wrap .nav .inner .logo {
+	font-size: 22px;
+	font-weight: 800;
+}
+.wrap .nav .inner .menu {
+	display: flex;
+}
+.wrap .nav .inner .menu li {
+	flex: 1 1 0;
+	min-width: 100px;
+	text-align: center;
+}
+.wrap .nav .inner .menu li a {
+	display: block;
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.6);
+}
+.wrap .nav .inner .menu li a:hover {
+	font-weight: 500;
+	font-size: 17px;
+	color: #fff;
+	transition: all 0.3s;
+}
+.wrap .mySwiper .swiper-slide {
+	text-align: center;
+}
+.wrap .mySwiper .swiper-slide .item {
+	padding: 160px 0 90px;
+	background: linear-gradient(to right, #fc00ff, #00dbde);
+}
+.wrap .mySwiper .swiper-slide .item.item2 {
+	background: linear-gradient(to right, #4776e6, #8e54e9);
+}
+.wrap .mySwiper .swiper-slide .item.item2 .link_area:hover {
+	color: #8e54e9;
+}
+.wrap .mySwiper .swiper-slide .item.item3 {
+	background: linear-gradient(to right, #8360c3, #2ebf91);
+}
+.wrap .mySwiper .swiper-slide .item.item3 .link_area:hover {
+	color: #5890a9;
+}
+.wrap .mySwiper .inner_txt {
+	font-size: 22px;
+	line-height: 32px;
+	letter-spacing: -0.6px;
+	color: #fff;
+}
+.wrap .mySwiper .inner_txt + .inner_txt {
+	margin-top: 13px;
+}
+.wrap .mySwiper .link_area {
+	display: inline-block;
+	margin-top: 18px;
+	padding: 10px 18px 8px;
+	border: 1px solid #fff;
+	font-size: 18px;
+	color: #fff;
+	vertical-align: middle;
+}
+.wrap .mySwiper .link_area:hover {
+	border-radius: 16px;
+	background: #fff;
+	color: #7c6eee;
+	transition: all 0.3s;
+}
+/*# sourceMappingURL=dowon.css.map */
