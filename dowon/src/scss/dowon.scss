@@ -76,6 +76,26 @@
                 }
             }
         }
+
+        &.fix {
+            position: fixed;
+            top: 0;
+            background: #fff;
+
+            .inner {
+                color: #000;
+            }
+            
+            .menu {
+                li a {
+                    color: #111;
+
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+        }
     }
 
     .header {
@@ -134,6 +154,22 @@
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
                 transition: background-size 0.8s;
+            }
+        }
+    }
+
+    .about {
+        padding-top: 80px;
+
+        .item {
+            width: 250px;
+            
+            .img_area {
+                width: 250px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
             }
         }
     }
