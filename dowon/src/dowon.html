@@ -47,13 +47,42 @@
         <!-- 회사소개 -->
         <div class="section about">
             <div class="inner">
-                <div class="img_area">
-                    <img src="img/slide_img1.jpg" alt="">
+                <strong class="tit">회사 소개</strong>
+                <div class="content_area">
+                    <div class="img_area">
+                        <img src="img/slide_img1.jpg" alt="">
+                    </div>
+                    <div class="text_area">
+                        <p class="inner_txt">안녕하십니까.<br>항상 도원특수용접에 격려와 관심을 보내주시는 고객 여러분께 감사드립니다.</p>
+                        <p class="inner_txt">저희 도원특수용접은 2010년부터 지금까지 <b>경쟁력 있는 실력</b>과 <b>차별화된 퀄리티</b>를 바탕으로 고객님들께 <b>최상의 제품</b>을 공급하고 있는 믿을 수 있는 기업입니다.</p>
+                        <p class="inner_txt">다년간 기계부품, 철구조물, 선박 등 다양한 파트에 납품을 하면서 <b>전문적인 기술과 경험</b>을 쌓아 왔으며, 다수의 최신 장비를 도입하여 더욱 정밀하고 신속하게, <b>고품질의 제품</b>을 공급하고 있습니다.</p>
+                        <p class="inner_txt">도원특수용접 대표 <b>정철호</b></p>
+                    </div>
                 </div>
-                <div class="text_area">
-                    <strong>회사 소개</strong>
-                    <p class="inner_txt">도원특수용접은 2010년부터 지금까지 경쟁력 있는 실력과 꾸준한 신뢰를 바탕으로 모든 면에서 최고, 차별화를 추구하는 기업입니다..</p>
+            </div>
+
+            <div class="info_area">
+                <div class="inner">
+                    <div class="inner_info">
+                        <strong class="info_tit">연혁</strong>
+                        <ul class="list_area">
+                            <li>- 2010. 12 도원특수용접 설립</li>
+                        </ul>
+                    </div>
+                    <div class="inner_info">
+                        <strong class="info_tit">특징</strong>
+                        <ul class="list_area">
+                            <li>- 특수 용접 자격증 보유</li>
+                            <li>- 배관 용접 자격증 보유</li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="section product">
+            <div class="inner">
+                <strong class="tit">특수 용접</strong>
             </div>
         </div>
     </div>
@@ -93,6 +122,16 @@
                 delay: 2500,
                 disableOnInteraction: true,
             },
+        });
+    </script>
+    <script>
+        $(window).scroll(function() {
+            var scroll = $(document).scrollTop();
+            var minusH = $(document).innerHeight() / 3;
+            var target1 = $('.about').offset().top;
+            if (scroll > target1 - minusH) {
+                $('.about').addClass('move');
+            }
         });
     </script>
 </body>
