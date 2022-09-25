@@ -192,24 +192,28 @@
     }
 
     .about {
-        padding: 160px 0 0 0;
+        padding: 140px 0 0 0;
 
         .content_area {
             overflow: hidden;
             position: relative;
             display: flex;
+            padding: 40px 0 40px 40px;
             margin-top: 40px;
             border-radius: 16px;
-            box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+            border: 6px solid #e5e9f0;
             box-sizing: border-box;
             background: #fff;
             z-index: 10;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         }
 
         .img_area {
             overflow: hidden;
             min-width: 283px;
-            max-width: 283px;
+            width: 283px;
+            height: 283px;
+            border-radius: 50%;
 
             img {
                 width: 100%;
@@ -219,7 +223,7 @@
 
         .text_area {
             position: relative;
-            padding: 30px 20px;
+            padding: 30px;
 
             .inner_txt {
                 font-size: 18px;
@@ -233,16 +237,15 @@
 
                 b {
                     position: relative;
-                    font-size: 20px;
-                    color: #000;
+                    color: rgb(38, 72, 134);
                 }
 
                 &:last-child {
                     position: absolute;
                     padding-top: 15px;
                     font-size: 20px;
-                    bottom: 30px;
-                    right: 20px;
+                    bottom: 0;
+                    right: 30px;
                     border-top: 1px solid rgb(38, 72, 134);
 
                     b {
@@ -253,8 +256,8 @@
         }
 
         .info_area {
-            margin-top: -50px;
-            padding: 90px 0 90px;
+            margin-top: -180px;
+            padding: 200px 0 40px;
             background: #e5e9f0;
 
             .inner {
