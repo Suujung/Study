@@ -196,114 +196,109 @@
 
         .content_area {
             overflow: hidden;
-            position: relative;
             display: flex;
-            padding: 40px 0 40px 40px;
             margin-top: 40px;
-            border-radius: 16px;
-            border: 6px solid #e5e9f0;
-            box-sizing: border-box;
-            background: #fff;
-            z-index: 10;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 18px;
         }
 
         .img_area {
-            overflow: hidden;
-            min-width: 283px;
-            width: 283px;
-            height: 283px;
-            border-radius: 50%;
+            max-width: 350px;
+            min-width: 350px;
+            height: auto;
 
             img {
                 width: 100%;
-                height: auto;
+                height: 100%;
             }
         }
 
+        .inner_area {
+            width: 100%;
+        }
+
         .text_area {
-            position: relative;
             padding: 30px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.15);
 
             .inner_txt {
                 font-size: 18px;
                 word-break: keep-all;
-                line-height: 24px;
-                color: #333;
+                color: #3f3f3f;
 
                 & + .inner_txt {
-                    margin-top: 15px;
-                }
-
-                b {
-                    position: relative;
-                    color: rgb(38, 72, 134);
+                    margin-top: 18px;
                 }
 
                 &:last-child {
-                    position: absolute;
-                    padding-top: 15px;
-                    font-size: 20px;
-                    bottom: 0;
-                    right: 30px;
-                    border-top: 1px solid rgb(38, 72, 134);
+                    text-align: right;
 
-                    b {
-                        font-size: 24px;
+                    strong {
+                        &::before {
+                            height: 5px;
+                            background-color: rgba(60, 128, 255, 0.2);
+                        }
+                    }
+                }
+
+                strong {
+                    position: relative;
+                    color: #000;
+                    font-weight: bold;
+
+                    &::before {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        height: 5px;
+                        background-color: rgba(255, 83, 60, 0.2);
+                        z-index: -1;
+                        content: '';
                     }
                 }
             }
         }
 
         .info_area {
-            margin-top: -180px;
-            padding: 200px 0 40px;
-            background: #e5e9f0;
-
-            .inner {
-                display: flex;
-            }
+            display: flex;
+            text-align: center;
 
             .inner_info {
-                overflow: hidden;
-                flex: 1 1 0;
-                min-height: 240px;
-                background: #fff;
-                border-radius: 12px;
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-                border: 1px solid #f2f2f2;
-                text-align: center;
-                transition: all .3s;
+                padding: 20px;
+                width: 50%;
+                background-color: rgba(255, 231, 196, 0.2);
+                font-size: 16px;
+                color: #5f5f5f;
 
                 & + .inner_info {
-                    margin-left: 20px;
-                    border: 1px solid rgb(38, 72, 134);
-
-                    .info_tit {
-                        background: rgb(38, 72, 134);
-                        color: #f2f2f2;
-                    }
+                    border-left: 2px solid rgba(0, 0, 0, 0.15);
                 }
+            }
 
-                .info_tit {
-                    display: block;
-                    padding: 15px 0;
-                    margin-bottom: 20px;
-                    font-size: 20px;
-                    font-weight: bold;
-                    background: #f2f2f2;
-                    color: rgb(38, 72, 134);
-                    transition: all .3s;
+            .info_tit {
+                position: relative;
+                font-size: 20px;
+                color: #000;
+                font-weight: bold;
+
+                &::before {
+                    position: absolute;
+                    left: -3px;
+                    right: -3px;
+                    bottom: 0;
+                    top: 0;
+                    background-color: rgba(255, 177, 60, 0.2);
+                    z-index: -1;
+                    content: '';
                 }
+            }
 
-                .list_area {
-                    li {
-                        font-size: 16px;
-                        color: rgb(68, 68, 68);
-                        & + li {
-                            margin-top: 6px;
-                        }
-                    }
+            .list_area {
+                margin-top: 14px;
+
+                li + li {
+                    margin-top: 4px;
                 }
             }
         }
